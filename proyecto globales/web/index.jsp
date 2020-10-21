@@ -56,6 +56,8 @@
                             <li><a href="#">Super el Chino</a></li>
                             <li><a href="#">Supermercado la Perla</a></li>
                             <li><a href="#">El Mercadito Saludable</a></li>
+                            <li><a href="#">Supermercado la Perla</a></li>
+                            <li><a href="#">El Mercadito Saludable</a></li>
                         </ul>
                     </div>
                 </div>
