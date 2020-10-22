@@ -106,8 +106,8 @@
                                  <li><a href="#frutas"  title="Frutas">Frutas</a></li>
                                  <li><a href="#pescado" title="Pescado">Pescado</a></li>
                                  <li><a href="#carnesfrescas"  title="Carnes Frescas">Carnes Frescas</a></li>
-                                 <li><a href="#comidarapida" title="Comida rápida">Comida rápida</a></li>
-                                 <li><a href="#frutasnueces"  title="Regalos de frutas y nueces">Regalos de frutas y nueces</a></li>                             
+                                 <li><a href="#comidarapida" title="Comida rápida">Comida Rápida</a></li>
+                                 <li><a href="#frutasnueces"  title="Regalos de frutas y nueces">Regalos de Frutas y Nueces</a></li>                             
                                 
                                 
 
