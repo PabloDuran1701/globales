@@ -102,11 +102,14 @@
                         <div class="sidebar__item">
                             <h4>Department</h4>
                             <ul>
-                                <li><a href="#carnesfrescas"  title="Carnes Frescas">Carnes Frescas</a></li>
+                               
                                  <li><a href="#frutas"  title="Frutas">Frutas</a></li>
+                                 <li><a href="#pescado" title="Pescado">Pescado</a></li>
+                                 <li><a href="#carnesfrescas"  title="Carnes Frescas">Carnes Frescas</a></li>
+                                 <li><a href="#comidarapida" title="Comida rápida">Comida rápida</a></li>
                                  <li><a href="#frutasnueces"  title="Regalos de frutas y nueces">Regalos de frutas y nueces</a></li>                             
-                                <li><a href="#pescado" title="Pescado">Pescado</a></li>
-                                <li><a href="#comidarapioda" title="Comida rápida">Comida rápida</a></li>
+                                
+                                
 
                             </ul>
                         </div>
@@ -430,7 +433,7 @@
                        <div class="filter__item">
                         <div class="row">
                               <div class="section-title product__discount__title">
-                            <h2>Pescado</h2> <a name="Pescado"></a>
+                            <h2>Pescado</h2> <a name="pescado"></a>
                         </div>
                             
                             
