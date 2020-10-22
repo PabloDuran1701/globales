@@ -54,12 +54,9 @@
                             <li><a href="#">El Mercadito</a></li>
                             <li><a href="#">Super Quetzal</a></li>
                             <li><a href="#">Super el Chino</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
+                            <li><a href="./laperla.jsp">Supermercado la Perla</a></li>
                             <li><a href="#">El Mercadito Saludable</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
+
                         </ul>
                     </div>
                 </div>
