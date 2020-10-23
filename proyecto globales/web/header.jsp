@@ -17,14 +17,23 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a class="ml-md-5" href="./index.jsp"><img src="img/logo.png" alt="" width="50" height="50"></a>
+                    <a class="ml-md-5" href="./index.jsp"><img src="img/mini- Comercio.png" alt="" class="ml-lg-n4"></a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
                         <li class="active"><a href="./index.jsp">Inicio</a></li>
-                        <li><a href="./tiendas.jsp">Tiendas</a></li>
+                        <li><a href="./tiendas.jsp">Tiendas</a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="./superdota.jsp">Super Dota</a></li>
+                                <li><a href="./elmercadito.jsp">El Mercadito</a></li>
+                                <li><a href="./Quetzal.jsp">Super Quetzal</a></li>
+                                <li><a href="#">Super el Chino</a></li>
+                                <li><a href="./laperla.jsp">Supermercado la Perla</a></li>
+                                <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Detalles del pedido</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./shop-details.html">Shop Details</a></li>
