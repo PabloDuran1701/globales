@@ -50,13 +50,12 @@
                             <span>Tiendas</span>
                         </div>
                         <ul>
-                            <li><a href="#">Super Dota</a></li>
-                            <li><a href="#">El Mercadito</a></li>
+                           <li><a href="./superdota.jsp">Super Dota</a></li>
+                            <li><a href="./elmercadito.jsp">El Mercadito</a></li>
                             <li><a href="#">Super Quetzal</a></li>
                             <li><a href="#">Super el Chino</a></li>
                             <li><a href="./laperla.jsp">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-
+                            <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
                         </ul>
                     </div>
                 </div>

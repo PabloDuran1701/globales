@@ -46,12 +46,11 @@
                         </div>
                         <ul>
                             <li><a href="./superdota.jsp">Super Dota</a></li>
-                            <li><a href="#">El Mercadito</a></li>
+                            <li><a href="./elmercadito.jsp">El Mercadito</a></li>
                             <li><a href="#">Super Quetzal</a></li>
                             <li><a href="#">Super el Chino</a></li>
                             <li><a href="./laperla.jsp">Supermercado la Perla</a></li>
                             <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
-                            
                         </ul>
                     </div>
                 </div>
@@ -84,7 +83,7 @@
                         <h2>Tienda</h2>
                         <div class="breadcrumb__option">
                             <a href="./index.jsp">Inicio</a>
-                            <span>El Mercadito Saludable</span>
+                            <span>Super Dota</span>
                         </div>
                     </div>
                 </div>
@@ -102,7 +101,7 @@
                         <div class="sidebar__item">
                             <h4>Categorías</h4>
                             <ul>
-                               
+                                 <li><a href="#hogar"  title="Hogar">Hogar</a></li>
                                  <li><a href="#frutas"  title="Frutas">Frutas</a></li>
                                  <li><a href="#pescado" title="Pescado">Pescado</a></li>
                                  <li><a href="#carnesfrescas"  title="Carnes Frescas">Carnes Frescas</a></li>
@@ -220,7 +219,75 @@
                         </div>
                     </div>
                     
+                     <div class="filter__item">
+                        <div class="row">
+                              <div class="section-title product__discount__title">
+                            <h2>Hogar</h2> <a name="hogar"></a>
+                        </div>
+                            
+                            
+                        </div>
+                    </div>
                     
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-17.jpg">
+                                    <ul class="product__item__pic__hover">
+                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Horno de microondas Panasonic</a></h6>
+                                    <h5>69 000 colones</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                        
+                         <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-18.jpg">
+                                    <ul class="product__item__pic__hover">
+                                       
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Licuadora Negra Mesa Oster</a></h6>
+                                    <h5>33 030 colones</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                         <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/product-19.jpg">
+                                    <ul class="product__item__pic__hover">
+                                     
+                                       
+                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">Licuadora Oster con 10 Velocidades</a></h6>
+                                    <h5>46 330 colones</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                       
+                       
+                    </div>
+                    
+                    <div class="filter__item">
                     
                      <div class="filter__item">
                         <div class="row">

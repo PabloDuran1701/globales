@@ -7,7 +7,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mini-Comercio Los Santos</title>>
+    <title>Mini-Comercio Los Santos</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -45,13 +45,12 @@
                            <span>Tiendas</span>
                         </div>
                         <ul>
-                            <li><a href="#">Super Dota</a></li>
-                            <li><a href="#">El Mercadito</a></li>
+                            <li><a href="./superdota.jsp">Super Dota</a></li>
+                            <li><a href="./elmercadito.jsp">El Mercadito</a></li>
                             <li><a href="#">Super Quetzal</a></li>
                             <li><a href="#">Super el Chino</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-                            
+                            <li><a href="./laperla.jsp">Supermercado la Perla</a></li>
+                            <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
                         </ul>
                     </div>
                 </div>
@@ -100,7 +99,7 @@
                 <div class="col-lg-3 col-md-5">
                     <div class="sidebar">
                         <div class="sidebar__item">
-                            <h4>Department</h4>
+                            <h4>Categorías</h4>
                             <ul>
                                
                                  <li><a href="#frutas"  title="Frutas">Frutas</a></li>
