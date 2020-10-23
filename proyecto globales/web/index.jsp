@@ -60,17 +60,7 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="hero__search">
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>+506 2546-2121</h5>
-                                <span>  Contacto de Soporte </span>
-                            </div>
-                        </div>
-                    </div>
+                    
                     
                     <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
                         <div class="hero__text">

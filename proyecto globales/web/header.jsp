@@ -1,11 +1,12 @@
-    <header class="header">
+<%@include file="../loginpop.jsp"%>
+<header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="row">
                     <div class="ml-auto">
                         <div class="header__top__right">
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i>Acceder</a>
+                                <a data-toggle="modal" class="nav-link" data-target="#Login" href="#"><i class="fa fa-user"></i>Acceder</a>
                             </div>
                         </div>
                     </div>
@@ -36,10 +37,22 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-            <div class="humberger__open">
+                <div class="humberger__open">
                 <i class="fa fa-bars"></i>
             </div>
+                <div class="hero__search m-md-3">
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+506 2546-2121</h5>
+                                <span>  Contacto de Soporte </span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
         </div>
     </header>
     <!-- Header Section End -->
