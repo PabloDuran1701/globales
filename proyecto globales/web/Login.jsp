@@ -25,7 +25,7 @@
         <%@include file="../presentation/popUpRegistrarUsuario.jsp" %>
 
         <div class="row">
-            <div class="col-md-12" id="">
+            <div class="col-md-12" id="c">
                 <div class="login-dark" >
                     <form action="Inicio" method="POST">
                         <h2 class="sr-only" style=" " >Login Form</h2>
