@@ -30,14 +30,6 @@
         </div>
 
         <%@include file="header.jsp"%>
-
-
-
-
-        <!-- Hero Section Begin -->
-
-        <!-- Hero Section End -->
-
         <!-- Breadcrumb Section Begin -->
         <section class="breadcrumb-section set-bg" data-setbg="img/bannerquetzal.png">
             <div class="container">
