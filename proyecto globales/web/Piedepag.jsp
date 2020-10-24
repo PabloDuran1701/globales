@@ -5,7 +5,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.jsp"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.jsp"><img src="img/mini- Comercio.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Direccion: Detras de la vaca</li>

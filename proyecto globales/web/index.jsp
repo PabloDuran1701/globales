@@ -43,8 +43,8 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <%@include file="menutiendas.jsp"%>
-                <div class="col-lg-9">
+                
+                <div class="col-lg-12">
                     <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
                         <div class="hero__text">
                             <span></span>
