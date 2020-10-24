@@ -31,38 +31,7 @@
 
    <%@include file="header.jsp"%>
 
-   
-
-
-    <!-- Hero Section Begin -->
-    <section class="hero hero-normal">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="hero__categories">
-                       
-                        
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
-                          <div class="hero__search">
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>+506 2546-2121</h5>
-                                <span>  Contacto de Soporte </span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
+  
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -104,16 +73,12 @@
 
                             </ul>
                         </div>
-                       
-                        
-                        
-                      
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-7">
                     <div class="product__discount">
                         <div class="section-title product__discount__title">
-                           <h2>Super Dota</h2> <a name="superdota" ></a> 
+                            <a href="./superdota.jsp"><h2>Super Dota</h2></a> <a name="superdota" ></a> 
                         </div>
                         <div class="row">
                             <div class="product__discount__slider owl-carousel">

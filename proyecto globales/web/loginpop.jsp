@@ -15,7 +15,7 @@
                                 <div class="login-dark" >
                                     <form action="Inicio" method="POST">
                                         <h2 class="sr-only" style=" " >Login Form</h2>
-                                        <div class="illustration"><i>  <img  src="img/login1.png" style= "width:20%;margin-left:40%;padding-bottom:10%"> </i></div>
+                                        <div class="illustration"><i>  <img  src="img/imglogin.png" style= "width:100%;padding-bottom:10%"> </i></div>
                                         <div class="form-group"><input class="form-control" type="text" name="Cedula" placeholder="Cedula"></div>
                                         <div class="form-group"><input class="form-control" type="password" name="Contra" placeholder="Contraseña"></div>
                                         

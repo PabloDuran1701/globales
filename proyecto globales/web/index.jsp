@@ -65,27 +65,27 @@
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Frutas Frescas</a></h5>
+                            <h5><a href="">Frutas Frescas</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Frutos Deshidratados</a></h5>
+                            <h5><a href="">Frutos Deshidratados</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetales</a></h5>
+                            <h5><a href="">Vegetales</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">Bebidas</a></h5>
+                            <h5><a href="">Bebidas</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">Carnes</a></h5>
+                            <h5><a href="">Carnes</a></h5>
                         </div>
                     </div>
                 </div>

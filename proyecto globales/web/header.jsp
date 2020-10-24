@@ -1,4 +1,4 @@
-<%@include file="../loginpop.jsp"%>
+<%@include file="./loginpop.jsp"%>
 <header class="header">
     <div class="header__top">
         <div class="container">
@@ -34,12 +34,10 @@
                                 <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Detalles del pedido</a>
+                       <li><a href="#">Detalles del pedido</a>
                             <ul class="header__menu__dropdown">
-                                <li><a href="./shop-details.html">Shop Details</a></li>
                                 <li><a href="./shoping-cart.jsp">Carrito</a></li>
-                                <li><a href="./checkout.jsp">Pago</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
+                                <li><a href="./checkout.jsp">Procesar Pedido</a></li>
                             </ul>
                         </li>
                         <li><a href="./contact.html">Contacto</a></li>

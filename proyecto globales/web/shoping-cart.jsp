@@ -31,50 +31,6 @@
 
    <%@include file="header.jsp"%>
 
-   
-
-
-    <!-- Hero Section Begin -->
-    <section class="hero hero-normal">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all">
-                            <i class="fa fa-bars"></i>
-                           <span>Tiendas</span>
-                        </div>
-                        <ul>
-                            <li><a href="#">Super Dota</a></li>
-                            <li><a href="#">El Mercadito</a></li>
-                            <li><a href="#">Super Quetzal</a></li>
-                            <li><a href="#">Super el Chino</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
-                          <div class="hero__search">
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>+506 2546-2121</h5>
-                                <span>  Contacto de Soporte </span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
         <div class="container">
@@ -182,17 +138,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__btns">
-                        <a href="#" class="primary-btn cart-btn">Continuar comprando</a>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shoping__continue">
-                        
-                    </div>
-                </div>
                 <div class="col-lg-6">
                     <div class="shoping__checkout">
                         <h5>Total del carrito</h5>
@@ -200,7 +145,7 @@
                             <li>Subtotal <span>454.98 colones</span></li>
                             <li>Total <span>454.98 colones</span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Realizar pago</a>
+                        <a href="./checkout.jsp" class="primary-btn">Realizar pago</a>
                     </div>
                 </div>
             </div>

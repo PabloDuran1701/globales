@@ -30,56 +30,6 @@
     </div>
 
       <%@include file="header.jsp"%>
-     
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all">
-                            <i class="fa fa-bars"></i>
-                            <span>Tiendas</span>
-                        </div>
-                        <ul>
-                            <li><a href="#">Super Dota</a></li>
-                            <li><a href="#">El Mercadito</a></li>
-                            <li><a href="#">Super Quetzal</a></li>
-                            <li><a href="#">Super el Chino</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-                            <li><a href="#">Supermercado la Perla</a></li>
-                            <li><a href="#">El Mercadito Saludable</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>+506 2546-2121</h5>
-                                <span>  Contacto de Soporte </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                        <div class="hero__text">
-                            <span></span>
-                            <h2>Mini-Comercio <br />Los Santos</h2>
-                            <p>Lo mejor de la Zona de Los Santos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Header Section End -->
 
 
     <!-- Breadcrumb Section Begin -->
