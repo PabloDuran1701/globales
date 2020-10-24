@@ -34,45 +34,6 @@
    
 
 
-    <!-- Hero Section Begin -->
-    <section class="hero hero-normal">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all">
-                            <i class="fa fa-bars"></i>
-                           <span>Tiendas</span>
-                        </div>
-                        <ul>
-                            <li><a href="./superdota.jsp">Super Dota</a></li>
-                            <li><a href="./elmercadito.jsp">El Mercadito</a></li>
-                            <li><a href="#">Super Quetzal</a></li>
-                            <li><a href="#">Super el Chino</a></li>
-                            <li><a href="./laperla.jsp">Supermercado la Perla</a></li>
-                            <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
-                          <div class="hero__search">
-                        <div class="hero__search__phone">
-                            <div class="hero__search__phone__icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="hero__search__phone__text">
-                                <h5>+506 2546-2121</h5>
-                                <span>  Contacto de Soporte </span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
@@ -80,10 +41,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Tienda</h2>
+                        <h2>Super Dota</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.jsp">Inicio</a>
-                            <span>Super Dota</span>
+                           
                         </div>
                     </div>
                 </div>
@@ -304,8 +264,7 @@
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
                                     <ul class="product__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                
                                         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                     </ul>
                                 </div>

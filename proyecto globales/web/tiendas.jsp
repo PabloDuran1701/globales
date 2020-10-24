@@ -129,7 +129,7 @@
                                         <div class="product__discount__item__text">
                                             <span>Comida rápida</span>
                                             <h5><a href="#">Hamburguesa torta de carne</a></h5>
-                                            <div class="product__item__price">1900 colones</div>
+                                            <div class="product__item__price">1 900 colones</div>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                         </div>
                         
                         <div class="section-title product__discount__title">
-                           <h2>El Mercadito</h2> <a name="mercadito" ></a> 
+                            <a href="./elmercadito.jsp"><h2>El Mercadito</h2></a> <a name="mercadito" ></a> 
                         </div>
                           <div class="row">
                             <div class="product__discount__slider owl-carousel">
@@ -198,14 +198,14 @@
                                  </div>
                               </div>
                                 <div class="section-title product__discount__title">
-                           <h2>Super Quetzal</h2> <a name="super" ></a> 
+                           <a href="./Quetzal.jsp"><h2>Super Quetzal</h2></a> <a name="super" ></a> 
                         </div>
                           <div class="row">
                             <div class="product__discount__slider owl-carousel">
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
-                                            data-setbg="img/product/discount/product-22.jpg">
+                                            data-setbg="img/product/discount/pd-6.jpg">
                                            
                                             <ul class="product__item__pic__hover">
                                                 
@@ -213,9 +213,9 @@
                                             </ul>
                                         </div>
                                         <div class="product__discount__item__text">
-                                            <span>Belleza</span>
-                                            <h5><a href="#">Sombra de ojos SEPHORA</a></h5>
-                                            <div class="product__item__price">16 330 colones</div>
+                                            <span>Frutas</span>
+                                            <h5><a href="#">Uvas</a></h5>
+                                            <div class="product__item__price">1 330 colones</div>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +258,7 @@
                             </div>
                         </div>
                         <div class="section-title product__discount__title">
-                         <h2>Super el Chino</h2> <a name="superchino" ></a> 
+                       <a href="./chino.jsp"><h2>Super El Chino</h2></a> <a name="superchino" ></a> 
                         </div>
                           <div class="row">
                             <div class="product__discount__slider owl-carousel">
@@ -321,7 +321,7 @@
                                 
                            
                               <div class="section-title product__discount__title">
-                           <h2>Supermercado la Perla</h2> <a name="perla" ></a> 
+                          <a href="./laperla.jsp"><h2>Supermercado la Perla</h2></a>  <a name="perla" ></a> 
                         </div>
                           <div class="row">
                             <div class="product__discount__slider owl-carousel">
@@ -382,7 +382,7 @@
                         </div>
                         
                         <div class="section-title product__discount__title">
-                        <h2>El Mercadito Saludable</h2> <a name="saludable" ></a> 
+                       <a href="./mercadito.jsp"><h2>El Mercadito Saludable</h2></a>  <a name="saludable" ></a> 
                         </div>
                           <div class="row">
                             <div class="product__discount__slider owl-carousel">

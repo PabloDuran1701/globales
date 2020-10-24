@@ -39,9 +39,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
                         <h2>Pago</h2>
-                        <div class="breadcrumb__option">
-                            <a href="./index.jsp">Inicio</a>
-                            <span>Pago</span>
+                        
                         </div>
                     </div>
                 </div>

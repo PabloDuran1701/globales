@@ -39,8 +39,7 @@
                     <div class="breadcrumb__text">
                         <h2>Carrito de compras</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.jsp">Inicio</a>
-                            <span>Carrito de compras</span>
+                           
                         </div>
                     </div>
                 </div>
