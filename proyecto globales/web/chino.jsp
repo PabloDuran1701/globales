@@ -153,7 +153,9 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
 
-                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#" 
+                                                           onclick="agregarACarrito('img/product/discount/pd-1.jpg','Raisins_and_nuts',480, event)">
+                                                            <i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -170,7 +172,8 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
 
-                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#" 
+                                                           onclick="agregarACarrito('img/product/discount/pd-2.jpg','Paquete_de_Vegetales',4800, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -187,7 +190,8 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
 
-                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#" 
+                                                           onclick="agregarACarrito('img/product/discount/pd-3.jpg','Fresco_de_frutas',520, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -346,7 +350,6 @@
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/product/product-13.jpg">
                                         <ul class="product__item__pic__hover">
-
                                             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
@@ -453,7 +456,6 @@
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/product/product-16.jpg">
                                         <ul class="product__item__pic__hover">
-
                                             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
@@ -483,7 +485,6 @@
                                 <div class="product__item">
                                     <div class="product__item__pic set-bg" data-setbg="img/product/product-9.jpg">
                                         <ul class="product__item__pic__hover">
-
                                             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
@@ -538,7 +539,7 @@
         <script src="js/mixitup.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
-
+        <script src="js/scripts.js"></script>
 
 
     </body>

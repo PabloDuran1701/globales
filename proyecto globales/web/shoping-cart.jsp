@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shoping__cart__table">
-                        <table>
+                        <table id="tablaCarrito" >
                             <thead>
                                 <tr>
                                     <th class="shoping__product">Productos</th>
@@ -138,7 +138,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="shoping__checkout">
+                    <div class="shoping__checkout" id="shoping__checkout">
                         <h5>Total del carrito</h5>
                         <ul>
                             <li>Subtotal <span>454.98 colones</span></li>
@@ -173,8 +173,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 
