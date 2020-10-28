@@ -1,5 +1,5 @@
 <div class="container container-fluid" id="containerCrearEncuesta">
-    <form action="newComentario" method="post">
+    <form action="inicio" method="post">
         <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -13,12 +13,10 @@
                         <div class="row">
                             <div class="col-md-12" id="c">
                                 <div class="login-dark" >
-                                    <form action="Inicio" method="POST">
-                                        <h2 class="sr-only" style=" " >Login Form</h2>
-                                        <div class="illustration"><i>  <img  src="img/imglogin.png" style= "width:100%;padding-bottom:10%"> </i></div>
-                                        <div class="form-group"><input class="form-control" type="text" name="Cedula" placeholder="Cedula"></div>
-                                        <div class="form-group"><input class="form-control" type="password" name="Contra" placeholder="Contraseña"></div>
-                                        
+                                    <div class="illustration"><i>  <img  src="img/imglogin.png" style= "width:100%;padding-bottom:10%"> </i></div>
+                                    <div class="form-group"><input class="form-control" type="text" name="Cedula" placeholder="Cedula"></div>
+                                    <div class="form-group"><input class="form-control" type="password" name="Contra" placeholder="Contraseña"></div>
+
                                 </div>
                             </div>
                         </div>
@@ -31,12 +29,11 @@
                             <div class="form-group">
                                 <button data-toggle="modal"   type="button" data-target="#registrarUser"  class="btn btn-primary btn-block" style="background-color: #ef384c" >Registrarme</button>
                             </div>
-                            </form>
 
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
     </form>
 </div>

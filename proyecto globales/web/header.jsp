@@ -1,4 +1,14 @@
 <%@include file="./loginpop.jsp"%>
+<%@ page import="Log_Neg.Usuario"%>
+
+<%
+    String var = "Acceder";
+    Usuario u = (Usuario) request.getSession(true).getAttribute("usuario");
+    if (u != null) {
+        var = u.getNombre()+" "+u.getApellido();
+    }
+
+%>
 
 <header class="header">
     <div class="header__top">
@@ -7,7 +17,25 @@
                 <div class="ml-auto">
                     <div class="header__top__right">
                         <div class="header__top__right__auth">
-                            <a data-toggle="modal" class="nav-link" data-target="#Login" href="#"><i class="fa fa-user"></i>Acceder</a>
+                            <%if (var.equals("Acceder")) {
+                            %>
+                            <a data-toggle="modal" class="nav-link" data-target="#Login" href="#"><i class="fa fa-user"></i><%=var%></a>
+                                <%} else {%>
+                            <nav class="header__menu">
+                                <ul>
+                                    <li><a href=""><%=var%></a>
+                                        <ul class="header__menu__dropdown">
+                                            <li><a href="">Perfil</a></li>
+                                            <li><a href="">Historial de pedidos</a></li>
+                                            <li><a href="">Cerrar Sesion</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </nav>
+
+                            <%}%>
+
                         </div>
                     </div>
                 </div>
@@ -35,7 +63,7 @@
                                 <li><a href="./mercadito.jsp">El Mercadito Saludable</a></li>
                             </ul>
                         </li>
-                       <li><a href="#">Detalles del pedido</a>
+                        <li><a href="#">Detalles del pedido</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./shoping-cart.jsp">Carrito</a></li>
                                 <li><a href="./checkout.jsp">Procesar Pedido</a></li>
