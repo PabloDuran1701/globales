@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     </head>
 
     <body>
@@ -43,6 +45,196 @@
                 </div>
             </div>
         </section>
+        
+        
+            <div class="col-lg-12">
+            <div class="product__details__tab">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                           aria-selected="true">DESCRIPCION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                           aria-selected="false">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                           aria-selected="false">COMENTARIOS</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                        <div class="product__details__tab__desc">
+                            <div class="latest-product__item__pic">
+                                <img src="img/product/dota.jpg" alt="">
+                            </div>
+                            <p>Super Dota es un supermercado dedicado al sector comercio. Le ofrecemos a las familias de la zona
+                                los precios más bajos del mercado, para ayudar a que ahorren y vivan mejor</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                        <div class="product__details__tab__desc">
+                            <p> Ubicación: 200 metros este del parque de Santa María de Dota.</span></p>
+                            <p>Contacto:<span> 2211-6572</span></p>
+                            <p>Email:<span> superdota@gmail.com</span></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-3" role="tabpanel">
+                        <div class="product__details__tab__desc">
+
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="well well-sm">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 text-center">
+                                                    <h1 class="rating-num">
+                                                        5.0</h1>
+                                                    <div class="rating">
+                                                        <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
+                                                        </span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star">
+                                                        </span><span class="glyphicon glyphicon-star"></span>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-xs-12 col-md-6">
+                                                    <div class="row rating-desc">
+                                                        <div class="col-xs-3 col-md-3 text-right">
+                                                            <span class="glyphicon glyphicon-star"></span>5
+                                                        </div>
+                                                        <div class="col-xs-8 col-md-9">
+                                                            <div class="progress progress-striped">
+                                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                                                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                                    <span class="sr-only">100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end 5 -->
+                                                        <div class="col-xs-3 col-md-3 text-right">
+                                                            <span class="glyphicon glyphicon-star"></span>4
+                                                        </div>
+                                                        <div class="col-xs-8 col-md-9">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                                                                     aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                                    <span class="sr-only">60%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end 4 -->
+                                                        <div class="col-xs-3 col-md-3 text-right">
+                                                            <span class="glyphicon glyphicon-star"></span>3
+                                                        </div>
+                                                        <div class="col-xs-8 col-md-9">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
+                                                                     aria-valuemin="0" aria-valuemax="100" style="width: 00%">
+                                                                    <span class="sr-only">40%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end 3 -->
+                                                        <div class="col-xs-3 col-md-3 text-right">
+                                                            <span class="glyphicon glyphicon-star"></span>2
+                                                        </div>
+                                                        <div class="col-xs-8 col-md-9">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20"
+                                                                     aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                                    <span class="sr-only">20%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end 2 -->
+                                                        <div class="col-xs-3 col-md-3 text-right">
+                                                            <span class="glyphicon glyphicon-star"></span>1
+                                                        </div>
+                                                        <div class="col-xs-8 col-md-9">
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                                                                     aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                                    <span class="sr-only">15%</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end 1 -->
+                                                    </div>
+                                                    <!-- end row -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                             <div class="container">
+                                <div class="row" style="margin-top:40px;">
+                                    <div class="col-md-6">
+                                        <div class="well well-sm">
+                                            <div class="text-right">
+                                             <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+<span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+<br/>
+<textarea  style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Escribe una reseña"></textarea>
+
+<button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-lg btn-success">Enviar</button>
+</body>
+                                                
+                                                
+                                                
+                                            </div>
+
+                               
+                                        </div> 
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                            
+                            
+                               <div class="card">
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="img/emma.jpg"class="img img-rounded img-fluid">
+
+                                        </div>
+                                        <div class="col-md-10">
+                                            <p>
+                                                <a class="float-left" ><strong>Emma Mora López</strong></a>
+                                                <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                                <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                                <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                                                <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+
+                                            </p>
+                                            <div class="clearfix"></div>
+                                            <p>Excelente atención. El pedido estaba listo cuando recién llegue al super.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- Breadcrumb Section End -->
 
         <!-- Product Section Begin -->
