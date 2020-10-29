@@ -21,10 +21,8 @@
         <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
-
     <body>
         <!-- Page Preloder -->
         <div id="preloder">
@@ -45,9 +43,7 @@
                 </div>
             </div>
         </section>
-        
-        
-            <div class="col-lg-12">
+        <div class="col-lg-12">
             <div class="product__details__tab">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
@@ -82,8 +78,6 @@
                     </div>
                     <div class="tab-pane" id="tabs-3" role="tabpanel">
                         <div class="product__details__tab__desc">
-
-
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
@@ -169,41 +163,26 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                             <div class="container">
+                            <div class="container">
                                 <div class="row" style="margin-top:40px;">
                                     <div class="col-md-6">
                                         <div class="well well-sm">
                                             <div class="text-right">
-                                             <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
-<span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
-<span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
-<span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
-<span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
-<br/>
-<textarea  style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Escribe una reseña"></textarea>
+                                                <span  onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"  class="fa fa-star checked"></span>
+                                                <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+                                                <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one"  style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+                                                <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+                                                <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one"  style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+                                                <br/>
+                                                <textarea  style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Escribe una reseña"></textarea>
 
-<button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-lg btn-success">Enviar</button>
-</body>
-                                                
-                                                
-                                                
+                                                <button  onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-lg btn-success">Enviar</button>
                                             </div>
-
-                               
                                         </div> 
-
                                     </div>
                                 </div>
                             </div>
-
-                            
-                            
-                            
-                            
-                            
-                               <div class="card">
+                            <div class="card">
                                 <div class="card-body">
 
                                     <div class="row">
@@ -218,23 +197,18 @@
                                                 <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                                                 <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                                                 <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-
                                             </p>
                                             <div class="clearfix"></div>
                                             <p>Excelente atención. El pedido estaba listo cuando recién llegue al super.</p>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                            
-
-
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         <!-- Breadcrumb Section End -->
 
         <!-- Product Section Begin -->
@@ -307,7 +281,7 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
                                                     <li><a href="#"
-                                               onclick="agregarACarrito('img/product/discount/pd-1.jpg','Raisins_and_nuts',480, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                           onclick="agregarACarrito('1', 'img/product/discount/pd-1.jpg', 'Raisins_and_nuts', 480, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -324,7 +298,7 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
                                                     <li><a href="#"
-                                               onclick="agregarACarrito('img/product/discount/pd-2.jpg','Paquete_de_vegetales',4800, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                           onclick="agregarACarrito('2', 'img/product/discount/pd-2.jpg', 'Paquete_de_vegetales', 4800, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -341,7 +315,7 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
                                                     <li><a href="#"
-                                               onclick="agregarACarrito('img/product/discount/pd-3.jpg','Fresco_de_frutas',520, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                           onclick="agregarACarrito('3', 'img/product/discount/pd-3.jpg', 'Fresco_de_frutas', 520, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -370,7 +344,7 @@
                                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                             <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                             <li><a href="#"
-                                                   onclick="agregarACarrito('img/product/product-17.jpg', 'Horno_Microondas', 69000, event)" ><i class="fa fa-shopping-cart"></i></a></li>
+                                                   onclick="agregarACarrito('4', 'img/product/product-17.jpg', 'Horno_Microondas', 69000, event)" ><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="product__item__text">
@@ -385,7 +359,7 @@
                                         <ul class="product__item__pic__hover">
 
                                             <li><a href="#"
-                                                   onclick="agregarACarrito('img/product/product-18.jpg', 'Licuadora_Negra_Mesa_Oster', 33030, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                   onclick="agregarACarrito('5', 'img/product/product-18.jpg', 'Licuadora_Negra_Mesa_Oster', 33030, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="product__item__text">
@@ -399,7 +373,7 @@
                                     <div class="product__item__pic set-bg" data-setbg="img/product/product-19.jpg">
                                         <ul class="product__item__pic__hover">
                                             <li><a href="#"
-                                                   onclick="agregarACarrito('img/product/product-19.jpg', 'Licuadora_Oster_con_10_Velocidades', 46330, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                   onclick="agregarACarrito('6', 'img/product/product-19.jpg', 'Licuadora_Oster_con_10_Velocidades', 46330, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="product__item__text">
@@ -424,7 +398,7 @@
                                             <ul class="product__item__pic__hover">
 
                                                 <li><a href="#"
-                                                       onclick="agregarACarrito('img/product/product-2.jpg', 'Banano_Órganico', 1900, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('7', 'img/product/product-2.jpg', 'Banano_Órganico', 1900, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -438,7 +412,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                                       onclick="agregarACarrito('img/product/product-6.jpg', 'Mango', 330, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('8', 'img/product/product-6.jpg', 'Mango', 330, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -452,7 +426,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#" 
-                                                       onclick="agregarACarrito('img/product/product-7.jpg', 'Sandía', 1330, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('9', 'img/product/product-7.jpg', 'Sandía', 1330, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -466,7 +440,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#" 
-                                                       onclick="agregarACarrito('img/product/product-8.jpg', 'Manzana', 530, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('10', 'img/product/product-8.jpg', 'Manzana', 530, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -480,7 +454,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                                       onclick="agregarACarrito('img/product/product-3.jpg', 'Guayaba', 530, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('11', 'img/product/product-3.jpg', 'Guayaba', 530, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -503,7 +477,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                                       onclick="agregarACarrito('img/product/product-1.jpg', 'Trozos_de_carne', 1300, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('12', 'img/product/product-1.jpg', 'Trozos_de_carne', 1300, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -517,7 +491,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-13.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                                       onclick="agregarACarrito('img/product/product-13.jpg', 'Chuletas_de_cerdo', 4330, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('13', 'img/product/product-13.jpg', 'Chuletas_de_cerdo', 4330, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -531,7 +505,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-14.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                                       onclick="agregarACarrito('img/product/product-14.jpg', 'Pierna_de_cordero', 5330, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('14', 'img/product/product-14.jpg', 'Pierna_de_cordero', 5330, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -554,7 +528,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                               onclick="agregarACarrito('img/product/product-5.jpg','Hamburguesa_torta_de_carne',1900, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('15', 'img/product/product-5.jpg', 'Hamburguesa_torta_de_carne', 1900, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -569,7 +543,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                               onclick="agregarACarrito('img/product/product-10.jpg','Pollo_frito_3_piezas',1600, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('16', 'img/product/product-10.jpg', 'Pollo_frito_3_piezas', 1600, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -592,7 +566,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-15.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                               onclick="agregarACarrito('img/product/product-15.jpg','Pescado_entero',2900, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('17', 'img/product/product-15.jpg', 'Pescado_entero', 2900, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -607,7 +581,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-16.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#" 
-                                               onclick="agregarACarrito('img/product/product-16.jpg','Camarones',2600, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('18', 'img/product/product-16.jpg', 'Camarones', 2600, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -630,7 +604,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-9.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                               onclick="agregarACarrito('img/product/product-9.jpg','Bolsa_frutos_secos',1900, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('19', 'img/product/product-9.jpg', 'Bolsa_frutos_secos', 1900, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">
@@ -644,7 +618,7 @@
                                         <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
                                             <ul class="product__item__pic__hover">
                                                 <li><a href="#"
-                                               onclick="agregarACarrito('img/product/product-12.jpg','Canasta_de_frutas',9000, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                       onclick="agregarACarrito('20', 'img/product/product-12.jpg', 'Canasta_de_frutas', 9000, event)"><i class="fa fa-shopping-cart"></i></a></li>
                                             </ul>
                                         </div>
                                         <div class="product__item__text">

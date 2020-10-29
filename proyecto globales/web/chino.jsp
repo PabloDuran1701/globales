@@ -153,8 +153,7 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
 
-                                                    <li><a href="#" 
-                                                           onclick="agregarACarrito('img/product/discount/pd-1.jpg','Raisins_and_nuts',480, event)">
+                                                    <li><a href="#" >
                                                             <i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
@@ -172,8 +171,7 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
 
-                                                    <li><a href="#" 
-                                                           onclick="agregarACarrito('img/product/discount/pd-2.jpg','Paquete_de_Vegetales',4800, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
@@ -190,8 +188,7 @@
                                                 <div class="product__discount__percent">-40%</div>
                                                 <ul class="product__item__pic__hover">
 
-                                                    <li><a href="#" 
-                                                           onclick="agregarACarrito('img/product/discount/pd-3.jpg','Fresco_de_frutas',520, event)"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div class="product__discount__item__text">
