@@ -71,19 +71,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="checkout__input">
-                                <p>Provincia<span>*</span></p>
-                                <input type="text">
-                            </div>
+                           
                             <div class="checkout__input">
                                 <p>Dirección<span>*</span></p>
-                                <input type="text" placeholder="Calle" class="checkout__input__add">
-                                <input type="text" placeholder="Apartamento,casa,residencial (optinal)">
+                                <input type="text" placeholder="Calle,Apartamento,casa,residencial" class="checkout__input__add">
+                                
                             </div>
-                            <div class="checkout__input">
-                                <p>Ciudad<span>*</span></p>
-                                <input type="text">
-                            </div>
+                            
                             
                         
                             <div class="row">
@@ -123,20 +117,7 @@
                                 <div class="checkout__order__total">Total <span> 750.99 colones</span></div>
                                
                                 
-                                <div class="checkout__input__checkbox">
-                                    <label for="payment">
-                                        Marcar compra
-                                        <input type="checkbox" id="payment">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="checkout__input__checkbox">
-                                    <label for="paypal">
-                                        Paypal
-                                        <input type="checkbox" id="paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
+                               
                                 <button type="submit" class="site-btn">Enviar orden</button>
                             </div>
                         </div>
