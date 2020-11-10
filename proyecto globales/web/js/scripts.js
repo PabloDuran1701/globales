@@ -51,14 +51,14 @@ function agregarACarrito(code, ruta, nombre, precio, event) {
         document.cookie = "producto_" + codigo + "=" + encodeURIComponent(JSON.stringify(producto)) + "; path = /proyecto%20globales/";
         document.cookie = "productos=" + codigos + "; path = /proyecto%20globales/";
     }
-    alert("Agregado");
+    swal("Agregado", "El producto fue agregado correctamente", "success");
 
 }
 
 
 $(document).ready(function () {
     llenarCarrito();
-
+    llenarOrden();
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
     proQty.append('<span class="inc qtybtn">+</span>');
@@ -69,7 +69,6 @@ $(document).ready(function () {
         if ($button.hasClass('inc')) {
             newVal += 1;
         } else {
-            // Don't allow decrementing below zero
             if (oldValue > 0) {
                 newVal = parseFloat(oldValue) - 1;
             } else {
@@ -82,30 +81,62 @@ $(document).ready(function () {
         codigo = $row.parent().find('.shoping__cart__item .code').val();
         actualizarCantidad(codigo, newVal);
         precio = precio.replace(" colones", "");
+        precio = precio.replaceAll(" ", "");
         total = (parseInt(newVal)) * (parseInt(precio));
         $row.parent().find(".shoping__cart__total").empty();
-        $row.parent().find(".shoping__cart__total").append(total + " colones");
+        $row.parent().find(".shoping__cart__total").append(numerosConEspacios(total) + " colones");
         sumarColCar();
     });
     sumarColCar();
 });
+
+function numerosConEspacios(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
 
 function sumarColCar() {
     total = 0;
     $("#tablaCarrito tr").find('td:eq(3)').each(function () {
         valor = $(this).html();
         valor = valor.replace(" colones", "");
+        valor = valor.replaceAll(" ", "");
         total += parseInt(valor);
     });
-
     contenido = "<h5>Total del carrito</h5>" +
             "<ul>" +
-            "<li>Subtotal <span>" + total + " colones</span></li>" +
-            "<li>Total <span>" + total + " colones</span></li>" +
+            "<li>Subtotal <span>" + numerosConEspacios(total) + " colones</span></li>" +
+            "<li>Total <span>" + numerosConEspacios(total) + " colones</span></li>" +
             "</ul>" +
             "<a href='./checkout.jsp' class='primary-btn'>Realizar pago</a>";
     $("#shoping__checkout").empty();
     $("#shoping__checkout").append(contenido);
+}
+function llenarOrden() {
+    productos = readCookie("productos");
+    texto = "";
+    textoTotal = "";
+    if (productos != null) {
+        productos = productos.split(",");
+        total = 0;
+        for (i = 0; i < productos.length; i++) {
+            aux = readCookie("producto_" + productos[i]);
+            aux = JSON.parse(aux);
+            if (aux != null && aux["cantidad"] > 0) {
+                nombre = aux["nombre"].replaceAll('_', ' ');
+                total = total + (parseFloat(aux["precio"]) * parseInt(aux["cantidad"]));
+                texto = texto + '<li><input type="hidden" class="code" value="' + productos[i] + '">' + nombre + '<span>' +  numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + '</span></li>';
+            }
+        }
+        textoTotal = "<span>" +  numerosConEspacios(total)  + " Colones</span>";
+    }
+    if (texto != "") {
+        $(".checkout__order ul").empty();
+        $(".checkout__order ul").append(texto);
+        $(".checkout__order__subtotal").empty();
+        $(".checkout__order__subtotal").append("Subtotal " + textoTotal);
+        $(".checkout__order__total").empty();
+        $(".checkout__order__total").append("Total " + textoTotal);
+    }
 }
 
 function llenarCarrito() {
@@ -117,25 +148,24 @@ function llenarCarrito() {
             aux = readCookie("producto_" + productos[i]);
             aux = JSON.parse(aux);
             nombre = aux["nombre"].replaceAll('_', ' ');
-            if (aux != 0) {
+            if (aux != null && aux["cantidad"] > 0) {
                 texto = texto + '<tr>' +
                         '<td class="shoping__cart__item">' +
                         '<img src="' + aux["ruta"] + '" alt="">' +
                         '<h5>' + nombre + '</h5>' +
                         '<input type="hidden" class="code" value="' + productos[i] + '">' +
                         '</td>' +
-                        '<td class="shoping__cart__price">' + aux["precio"] + ' colones' +
+                        '<td colspan="2" class="shoping__cart__price">' +  numerosConEspacios((aux["precio"])) + ' colones' +
                         '</td>' +
                         '<td class="shoping__cart__quantity">' +
                         '<div class="quantity">' +
                         '<div class="pro-qty">' +
-                        '<input type="text" value="' + aux["cantidad"] + '">' +
+                        '<input type="text" readonly value="' + aux["cantidad"] + '">' +
                         '</div>' +
                         '</div>' +
                         '</td>' +
-                        '<td class="shoping__cart__total">' + (parseFloat(aux["precio"]) * parseInt(aux["cantidad"])) + ' colones' +
-                        '</td>' +
-                        '<td class="shoping__cart__item__close"><span class="icon_close"></span></td></tr>';
+                        '<td class="shoping__cart__total" colspan="2">' +  numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + ' colones' +
+                        '</td>';
             }
         }
     }
@@ -144,5 +174,15 @@ function llenarCarrito() {
         $("#tablaCarrito tbody").append(texto);
     }
 }
+
+function enviarOrden(event){
+    event.preventDefault();
+    $("#checkout__order__products__list").find("li").each(function(){
+        codigo = $(this).children(".code").val();
+        actualizarCantidad(codigo,0);
+    });
+    swal("Correcto","Se ha realizado la accion correctamente","success");
+}
+
 
 

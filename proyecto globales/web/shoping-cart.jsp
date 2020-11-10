@@ -58,9 +58,9 @@
                             <thead>
                                 <tr>
                                     <th class="shoping__product">Productos</th>
-                                    <th>Precio</th>
+                                    <th colspan="2">Precio</th>
                                     <th>Cantidad</th>
-                                    <th>Total</th>
+                                    <th colspan="2">Total</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -76,8 +76,8 @@
                     <div class="shoping__checkout" id="shoping__checkout">
                         <h5>Total del carrito</h5>
                         <ul>
-                            <li>Subtotal <span>454.98 colones</span></li>
-                            <li>Total <span>454.98 colones</span></li>
+                            <li>Subtotal <span>0 colones</span></li>
+                            <li>Total <span>0 colones</span></li>
                         </ul>
                         <a href="./checkout.jsp" class="primary-btn">Realizar pago</a>
                     </div>
@@ -110,7 +110,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
 </body>
 
 </html>

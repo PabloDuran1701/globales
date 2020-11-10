@@ -108,17 +108,15 @@
                             <div class="checkout__order">
                                 <h4>Su orden</h4>
                                 <div class="checkout__order__products">Productos <span>Total</span></div>
-                                <ul>
-                                    <li>Paquete de Vegetales <span>75.99 colones</span></li>
-                                    <li>Vegetales frescos <span>151.99 colones</span></li>
-                                    <li>Bananos Órganicos <span>53.99 colones</span></li>
+                                <ul id="checkout__order__products__list">
+                                    
                                 </ul>
-                                <div class="checkout__order__subtotal">Subtotal <span> 750.99 colones</span></div>
-                                <div class="checkout__order__total">Total <span> 750.99 colones</span></div>
+                                <div class="checkout__order__subtotal">Subtotal <span> 0 colones</span></div>
+                                <div class="checkout__order__total">Total <span> 0 colones</span></div>
                                
                                 
                                
-                                <button type="submit" class="site-btn">Enviar orden</button>
+                                <button type="submit" class="site-btn enviarOrden" onclick="enviarOrden(event)">Enviar orden</button>
                             </div>
                         </div>
                     </div>
@@ -149,7 +147,9 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
 
  
 

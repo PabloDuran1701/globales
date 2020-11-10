@@ -655,6 +655,7 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
+        <script src="js/sweetalert.min.js" type="text/javascript"></script>
     </body>
 
 </html>
