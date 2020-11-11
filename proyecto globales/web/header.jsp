@@ -69,7 +69,7 @@
                                 <li><a href="./checkout.jsp">Procesar Pedido</a></li>
                             </ul>
                         </li>
-                        <li><a href="./contact.html">Contacto</a></li>
+                        <li><a href="./contacto.jsp">Contacto</a></li>
                     </ul>
                 </nav>
             </div>

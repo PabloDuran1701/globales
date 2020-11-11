@@ -8,7 +8,7 @@
                             <a href="./index.jsp"><img src="img/mini- Comercio.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Direccion: Detras de la vaca</li>
+                            <li>Direccion: Santa María de Dota (4,15 km),Provincia de San José, Costa Rica.</li>
                             <li>Telefono +506 2546-2121</li>
                             <li>Correo:  minicomercio@gmail.com </li>
                         </ul>
