@@ -26,7 +26,7 @@
                                     <li><a href=""><%=var%></a>
                                         <ul class="header__menu__dropdown">
                                             <li><a href="">Perfil</a></li>
-                                            <li><a href="">Historial de pedidos</a></li>
+                                            <li><a href="./historial.jsp">Historial de pedidos</a></li>
                                             <li><a href="" onclick="Cerrar(event)">Cerrar Sesion</a></li>
                                         </ul>
                                     </li>
