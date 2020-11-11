@@ -24,6 +24,24 @@
 </head>
 
 <body>
+    
+    <%
+    String nombre = "";
+    String apellido = "";
+    String direccion = "";
+    String tel = "";
+    String correo = "";
+    
+    Usuario us = (Usuario) request.getSession(true).getAttribute("usuario");
+    if (us != null) {
+        nombre = us.getNombre();
+        apellido= us.getApellido();
+        direccion=us.getDireccion();
+        tel=us.getTelefono();
+        correo=us.getCorreo();              
+    }
+
+%>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -44,7 +62,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Breadcrumb Section End -->
 
@@ -61,20 +78,20 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Nombre<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" value="<%=nombre%>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Apellido<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" value="<%=apellido%>">
                                     </div>
                                 </div>
                             </div>
                            
                             <div class="checkout__input">
                                 <p>Dirección<span>*</span></p>
-                                <input type="text" placeholder="Calle,Apartamento,casa,residencial" class="checkout__input__add">
+                                <input type="text" placeholder="Calle,Apartamento,casa,residencial" value="<%=direccion%>" class="checkout__input__add">
                                 
                             </div>
                             
@@ -84,13 +101,13 @@
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Teléfono<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" value="<%=tel%>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
                                         <p>Email<span>*</span></p>
-                                        <input type="text">
+                                        <input type="text" value="<%=correo%>">
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +116,7 @@
                           
                             
                             <div class="checkout__input">
-                                <p>Notas de la orden<span>*</span></p>
+                                <p>Notas de la orden</p>
                                 <input type="text"
                                     placeholder="Notas acerca de su orden, notas especiales para el delivery.">
                             </div>

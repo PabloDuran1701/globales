@@ -52,7 +52,6 @@ function agregarACarrito(code, ruta, nombre, precio, event) {
         document.cookie = "productos=" + codigos + "; path = /proyecto%20globales/";
     }
     swal("Agregado", "El producto fue agregado correctamente", "success");
-
 }
 
 
@@ -89,7 +88,6 @@ $(document).ready(function () {
     });
     sumarColCar();
 });
-
 function numerosConEspacios(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
@@ -115,6 +113,7 @@ function llenarOrden() {
     productos = readCookie("productos");
     texto = "";
     textoTotal = "";
+    producto="";
     if (productos != null) {
         productos = productos.split(",");
         total = 0;
@@ -124,10 +123,11 @@ function llenarOrden() {
             if (aux != null && aux["cantidad"] > 0) {
                 nombre = aux["nombre"].replaceAll('_', ' ');
                 total = total + (parseFloat(aux["precio"]) * parseInt(aux["cantidad"]));
-                texto = texto + '<li><input type="hidden" class="code" value="' + productos[i] + '">' + nombre + '<span>' +  numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + '</span></li>';
+                texto = texto + '<li><input type="hidden" class="code" value="' + productos[i] + '">' + nombre + '<span>' + numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + '</span></li>';
+                <input type="hidden" class="code" value="
             }
         }
-        textoTotal = "<span>" +  numerosConEspacios(total)  + " Colones</span>";
+        textoTotal = "<span>" + numerosConEspacios(total) + " Colones</span>";
     }
     if (texto != "") {
         $(".checkout__order ul").empty();
@@ -155,7 +155,7 @@ function llenarCarrito() {
                         '<h5>' + nombre + '</h5>' +
                         '<input type="hidden" class="code" value="' + productos[i] + '">' +
                         '</td>' +
-                        '<td colspan="2" class="shoping__cart__price">' +  numerosConEspacios((aux["precio"])) + ' colones' +
+                        '<td colspan="2" class="shoping__cart__price">' + numerosConEspacios((aux["precio"])) + ' colones' +
                         '</td>' +
                         '<td class="shoping__cart__quantity">' +
                         '<div class="quantity">' +
@@ -164,7 +164,7 @@ function llenarCarrito() {
                         '</div>' +
                         '</div>' +
                         '</td>' +
-                        '<td class="shoping__cart__total" colspan="2">' +  numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + ' colones' +
+                        '<td class="shoping__cart__total" colspan="2">' + numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + ' colones' +
                         '</td>';
             }
         }
@@ -175,14 +175,47 @@ function llenarCarrito() {
     }
 }
 
-function enviarOrden(event){
+function enviarOrden(event) {
     event.preventDefault();
-    $("#checkout__order__products__list").find("li").each(function(){
+    $("#checkout__order__products__list").find("li").each(function () {
         codigo = $(this).children(".code").val();
-        actualizarCantidad(codigo,0);
+        actualizarCantidad(codigo, 0);
     });
-    swal("Correcto","Se ha realizado la accion correctamente","success");
+    swal("Correcto", "Se ha realizado la accion correctamente", "success");
 }
+
+function Cerrar(event) {
+    event.preventDefault();
+    sessionStorage.removeItem('usuario');
+    swal({
+        title: "¿Desea Cerrar Sesión?",
+        text: "Cerrará la sesión",
+        icon: "warning",
+        buttons: {
+            cancel: {
+                text: "Cancelar",
+                value: null,
+                visible: true,
+                className: "",
+                closeModal: true
+            },
+            confirm: {
+                text: "Cerrar Sesion",
+                value: true,
+                visible: true,
+                className: "btn-danger",
+                closeModal: true
+            }
+        }
+    }).then(isConfirm => {
+        if (isConfirm) {
+            swal("Completado", "El usuario fue eliminado o desactivado correctamente", "success");
+            setTimeout(function () {
+                location.href = "index.jsp";
+            }, 1000);
+        }
+    });
+};
 
 
 

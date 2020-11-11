@@ -1,13 +1,13 @@
 <%@include file="./loginpop.jsp"%>
 <%@ page import="Log_Neg.Usuario"%>
-
+<script src="js/scripts.js" type="text/javascript"></script>
+<script src="js/sweetalert.min.js" type="text/javascript"></script>
 <%
     String var = "Acceder";
     Usuario u = (Usuario) request.getSession(true).getAttribute("usuario");
     if (u != null) {
         var = u.getNombre()+" "+u.getApellido();
     }
-
 %>
 
 <header class="header">
@@ -27,7 +27,7 @@
                                         <ul class="header__menu__dropdown">
                                             <li><a href="">Perfil</a></li>
                                             <li><a href="">Historial de pedidos</a></li>
-                                            <li><a href="">Cerrar Sesion</a></li>
+                                            <li><a href="" onclick="Cerrar(event)">Cerrar Sesion</a></li>
                                         </ul>
                                     </li>
 
