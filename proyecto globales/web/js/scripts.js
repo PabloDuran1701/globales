@@ -19,7 +19,6 @@ function existeProducto(codigo) {
         return false;
     }
 }
-
 function actualizarCantidad(codigo, cantidad) {
     dato = readCookie("producto_" + codigo);
     dato = JSON.parse(dato);
@@ -58,6 +57,7 @@ function agregarACarrito(code, ruta, nombre, precio, event) {
 $(document).ready(function () {
     llenarCarrito();
     llenarOrden();
+    llenarHistorial();
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
     proQty.append('<span class="inc qtybtn">+</span>');
@@ -109,11 +109,11 @@ function sumarColCar() {
     $("#shoping__checkout").empty();
     $("#shoping__checkout").append(contenido);
 }
+totalFinal = 0;
 function llenarOrden() {
     productos = readCookie("productos");
     texto = "";
     textoTotal = "";
-    producto="";
     if (productos != null) {
         productos = productos.split(",");
         total = 0;
@@ -124,9 +124,9 @@ function llenarOrden() {
                 nombre = aux["nombre"].replaceAll('_', ' ');
                 total = total + (parseFloat(aux["precio"]) * parseInt(aux["cantidad"]));
                 texto = texto + '<li><input type="hidden" class="code" value="' + productos[i] + '">' + nombre + '<span>' + numerosConEspacios((parseFloat(aux["precio"]) * parseInt(aux["cantidad"]))) + '</span></li>';
-                <input type="hidden" class="code" value="
             }
         }
+        totalFinal = total;
         textoTotal = "<span>" + numerosConEspacios(total) + " Colones</span>";
     }
     if (texto != "") {
@@ -174,14 +174,32 @@ function llenarCarrito() {
         $("#tablaCarrito tbody").append(texto);
     }
 }
-
 function enviarOrden(event) {
     event.preventDefault();
     $("#checkout__order__products__list").find("li").each(function () {
         codigo = $(this).children(".code").val();
         actualizarCantidad(codigo, 0);
     });
-    swal("Correcto", "Se ha realizado la accion correctamente", "success");
+    numOrden = 0;
+    if(readCookie("numOrden") != null){
+        numOrden = parseInt(readCookie("numOrden"))+1;
+    }
+    else{
+        numOrden = 1;
+    }
+    valor1 = '{"numOrden":"' + numOrden + '","total":' + totalFinal + '}';
+    valor1 = JSON.parse(valor1);
+    if (readCookie("Ordenes") != null) {
+        dato = readCookie("Ordenes");
+        dato = dato+","+numOrden;
+        document.cookie = "Ordenes=" + dato + "; path = /proyecto%20globales/";
+        document.cookie = "Orden"+numOrden+"=" + encodeURIComponent(JSON.stringify(valor1)) + "; path = /proyecto%20globales/";
+    }else{
+        document.cookie = "Ordenes="+numOrden+"; path = /proyecto%20globales/";
+        document.cookie = "Orden"+numOrden+"=" + encodeURIComponent(JSON.stringify(valor1)) + "; path = /proyecto%20globales/";
+    }
+    document.cookie = "numOrden="+numOrden+"; path = /proyecto%20globales/";
+    swal("Correcto", "Su numero de orden es "+numOrden, "success");
 }
 
 function Cerrar(event) {
@@ -217,5 +235,31 @@ function Cerrar(event) {
     });
 };
 
+function llenarHistorial() {
+    ordenes = readCookie("Ordenes");
+    texto1 = "";
+    if (ordenes != null) {
+        ordenes = ordenes.split(",");
+        for (i = 0; i < ordenes.length; i++) {
+            aux1 = readCookie("Orden" + ordenes[i]);
+            aux1 = JSON.parse(aux1);
+            noOrden = aux1["numOrden"];
+            if (aux1 != null) {
+                texto1 = texto1 + '<tr>' +
+                        '<td class="shoping__cart__item">' +
+                        '<h5> Orden Numero ' + noOrden + '</h5>' +
+                        '</td>' +
+                        '<td colspan="2" class="shoping__cart__price">' + numerosConEspacios((aux1["total"])) + ' colones' +
+                        '</td>' +
+                        '<td class="shoping__cart__total" colspan="2">Pendente de Entregar' +
+                        '</td>';
+            }
+        }
+    }
+    if (texto1 != "") {
+        $("#tablaHistorial tbody").empty();
+        $("#tablaHistorial tbody").append(texto1);
+    }
+}
 
 

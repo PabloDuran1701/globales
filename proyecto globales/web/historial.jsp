@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shoping__cart__table">
-                        <table id="tablaCarrito" >
+                        <table id="tablaHistorial" >
                             <thead>
                                 <tr>
                                     <th class="shoping__product">Numero orden</th>
