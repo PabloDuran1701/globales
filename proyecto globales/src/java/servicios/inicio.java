@@ -13,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Lenovo
  */
-@WebServlet(name = "inicio", urlPatterns = {"/inicio"})
+@WebServlet(name = "inicio", urlPatterns = {"/inicio", "/cerrar"})
 public class inicio extends HttpServlet {
 
     /**
@@ -39,24 +40,34 @@ public class inicio extends HttpServlet {
         if (request.getServletPath().equals("/inicio")) {
             System.out.println("login");
             this.InicioSesion(request, response);
+        } else {
+            request.getSession(true).setAttribute("usuario", null);
+            request.getSession(true).invalidate();
+            Cookie[] cookies = request.getCookies(); 
+            if (cookies != null) for (int i = 0; i < cookies.length; i++) {
+                cookies[i].setValue(""); 
+                cookies[i].setPath("/"); 
+                cookies[i].setMaxAge(0); 
+                response.addCookie(cookies[i]); }
+            request.getRequestDispatcher("index.jsp").forward(request, response);
         }
-        
+
     }
-    
+
     protected void InicioSesion(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException, SQLException {
         String cedula = request.getParameter("Cedula");
         String contra = request.getParameter("Contra");
-        Usuario u = new Usuario("user", "Pablo", "Duran", " ", "83604173", "duranpablo044@gmail.com", "clave", 304990923);
+        Usuario u = new Usuario("user", "Pablo", "Duran", "Santa Maria de dota frente a la iglesia", "83604173", "duranpablo044@gmail.com", "clave", 123);
         String us = String.valueOf(u.getId());
         if (u.getClave().equals(contra) && cedula.equals(us)) {
             request.getSession(true).setAttribute("usuario", u);
             request.getRequestDispatcher("index.jsp").forward(request, response);
-            
+
         } else {
             request.getRequestDispatcher("index.jsp").forward(request, response);
-            
+
         }
     }
 

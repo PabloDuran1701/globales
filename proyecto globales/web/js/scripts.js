@@ -261,5 +261,3 @@ function llenarHistorial() {
         $("#tablaHistorial tbody").append(texto1);
     }
 }
-
-
